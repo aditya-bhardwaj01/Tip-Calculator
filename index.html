@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styling.css">
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="main-part">
+        <div class="head">
+            <a href="#">
+                <img src="images/logo.png" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="tip-calculator">
+            <div class="row tipSection">
+                <div class="input-section col-md-6">
+
+                    <label for="bill">Bill</label>
+                    <div class="bill-input input-container">
+                        <img class="icon" src="images/icon-dollar.png">
+                        <input type="tel" id="bill" class="bill-amount">
+                    </div>
+
+                    <!-- <div class="tip-percent row">
+                        <div class="col-sm-4">
+                            <button>5%</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button>10%</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button>15%</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button>25%</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button>50%</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button>Custom</button>
+                        </div>
+                    </div> -->
+                    <div class="tipPercent">
+                        <label for="bill-leftButtons">Select Tip %</label>
+                        <div class="bill-leftButtons">
+                          <button class="tipPercentage" id="five">5%</button>
+                          <button class="tipPercentage" id="ten">10%</button>
+                          <button class="tipPercentage" id="fifteen">15%</button>
+                          <button class="tipPercentage" id="twentyfive">25%</button>
+                          <button class="tipPercentage" id="fifty">50%</button>
+                          <input
+                            type="tel"
+                            id="tipPercentageCustom"
+                            placeholder="Custom"
+                          />
+                        </div>
+                      </div>
+                    
+                    <label for="people">Number of People</label>
+                    <div class="people-input input-container">
+                        <img class="icon" src="images/icon-person.png">
+                        <input type="tel" id="people" class="people-count">
+                    </div>
+                </div>
+    
+                <div class="output-section col-md-6">
+                    <div class="tip-display">
+                        <div class="row tip-amount tip-calculated">
+                            <div class="col-sm-6">
+                                <h5>Tip Amount</h5>
+                                <p>/ person</p>
+                            </div>
+                            <div class="col-sm-6 value">
+                                <h1>$<span>0.00</span></h1>
+                            </div>
+                        </div>
+                        <hr class="seperation">
+                        <div class="row total tip-calculated">
+                            <div class="col-sm-6">
+                                <h5>Total</h5>
+                                <p>/ person</p>
+                            </div>
+                            <div class="col-sm-6 value">
+                                <h1>$<span>0.00</span></h1>
+                            </div>
+                        </div>
+
+                        <div class="reset-button">
+                            <button class="reset-btn">RESET</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

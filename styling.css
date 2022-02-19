@@ -1,0 +1,232 @@
+html{
+    font-family: "Space Mono", monospace;
+}
+
+body{
+    margin: 0;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: #C5E4E7;
+    height: 105vh;
+} 
+
+.main-part{
+    text-align: center;
+    /* border: solid red; */
+}
+
+.head{
+    margin-top: 1em;
+}
+.head a img{
+    height: 65px;
+    width: 100px;
+}
+
+.tip-calculator{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.8em;
+}
+
+.tipSection{
+    /* border: solid red; */
+    background-color: white;
+    padding: 1.7em;
+    border-radius: 1em;
+}
+
+/* DESIGN INPUT SECTION */
+.input-section{
+    padding-right: 3em;
+}
+/* General */
+.input-section label{
+    display: block;
+    text-align: left;
+    color: #7F9C9F;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 9px;
+    /* border: solid yellow; */
+}
+
+.input-section input{
+    display: block;
+    text-align: right;
+    width: 100%;
+    border: none;
+    background-color: #F4FAFA;
+    height: 45px;
+    color: #00494D;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 0.8em;
+    /* border: solid red; */
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+  
+.icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    background-color: #F4FAFA;
+    height: 45px;
+    width: 1%;
+    text-align: center;
+}
+
+/* bill input section */
+.bill-input{
+    margin: 0 0 3em 0;
+}
+
+/* tip percent section */
+.tipPercent{
+    margin: 1em 0;
+    margin-bottom: 3em;
+}
+.tipPercent button{
+    border: none;
+    width: 100px;
+    color: white;
+    height: 2.5em;
+    background-color: #00494D;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 7px;
+}
+.tipPercent button:focus{
+    transition: 0.4s;
+    background-color: #5E7A7D;
+}
+#tipPercentageCustom{
+    width: 100px;
+    text-align: center;
+    background-color: #00494D;
+    height: 2.5em;
+    font-weight: bold;
+    border-radius: 7px;
+    caret-color: white;
+    font-size: 16px;
+    color: white;
+    padding-right: 0%;
+}
+#tipPercentageCustom:focus{
+    padding-right: 0.8em;
+    text-align: right;
+    background-color: white;
+    caret-color: black;
+    color: #00494D;
+}
+.bill-leftButtons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* number of people section */
+
+
+/* DESIGN OUTPUT SECTION */
+.output-section{
+    /* border: solid brown; */
+    background-color: #00494D;
+    border-radius: 1em;
+}
+
+.tip-display{
+    /* border: solid white; */
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+}
+.seperation{
+    color: #5E7A7D
+}
+
+.tip-calculated{
+    color: #5E7A7D;
+}
+.tip-calculated h5{
+    color: white;
+}
+.tip-calculated h1{
+    font-weight: bold;
+}
+.tip-calculated, .col-sm-6{
+    text-align: left;
+    /* border: solid yellow; */
+}
+.tip-calculated p{
+    font-weight: bold;
+}
+.value{
+    text-align: right;
+}
+
+.total{
+    margin-top: 0.6em;
+}
+
+
+.reset-btn{
+    width: 100%;
+    background-color: #5E7A7D;
+    border: none;
+    font-size: 18px;
+    color: #00494D;
+    font-weight: bold;
+    height: 43px;
+    border-radius: 6px;
+}
+.reset-btn:hover{
+    background-color: #fff;
+    transition: 0.6s;
+}
+
+@media (min-width: 767px){
+    .tip-calculator{
+        max-width: 855px;  
+    }
+    .seperation{
+        display: none;
+    }
+    .reset-button{
+        margin-top: 12em;
+    }
+}
+
+@media (max-width: 767px){
+    .tipSection{
+        padding: 1em;
+    }
+    .output-section{
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 575px){
+    .tip-calculated, .col-sm-6{
+        text-align: center;
+    }
+    .value{
+        text-align: center;
+        margin-top: 0;
+    }
+    .seperation{
+        display: visible;
+        color: #5E7A7D
+    }
+}
