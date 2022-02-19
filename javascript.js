@@ -27,6 +27,7 @@ $(function(){
         $(".people-count").val("");
         $(".tip-amount span").html("0.00");
         $(".total span").html("0.00");
+        $("#tipPercentageCustom").val();
     });
 
     $("#tipPercentageCustom").focusout(function(){
